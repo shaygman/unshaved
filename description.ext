@@ -1,0 +1,35 @@
+author = Shay_gman;
+overviewPicture = "\mcc_sandbox_mod\mcc\helpers\data\commanderRTS.paa";
+overviewText = "MCC Campaign";
+onLoadName = (MCC)Template Unshaved;
+loadScreen = "\mcc_sandbox_mod\mcc\helpers\data\commanderRTS.paa";
+onLoadMission =  (MCC)Template Unshaved;
+
+respawn      = "BASE";
+respawndelay = 5;
+disabledAI   = 1;
+enableDebugConsole = 1;
+saving = 0;
+
+//----- For PvP ---------
+disableChannels[]={0,1};
+joinUnassigned = 1;
+
+corpseLimit = 30;
+corpseRemovalMinTime = 60;
+corpseRemovalMaxTime = 300;
+
+wreckLimit = 15;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 1200;
+showSquadRadar = 0;
+
+class Header
+{
+	gameType =CTI;
+	minPlayers = 1;
+	maxPlayers = 60;
+};
+
+//Kits
+#include "loadouts\cfgLoadouts.hpp"
